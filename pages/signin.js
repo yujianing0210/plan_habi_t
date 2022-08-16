@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import logo from '../public/logo.jpg'
 import { LockClosedIcon } from '@heroicons/react/outline'
 import { UserIcon } from '@heroicons/react/outline'
@@ -10,7 +11,7 @@ const Signin = () => {
                 <Image src={logo} width={200} height={200} />
             </div>
             <div className="justify-self-center pt-90 flex flex-col gap-3 w-80">
-                <div className="w-full text-center text-xl font-bold my-10">Login</div>
+                <div className="w-full text-center text-xl font-bold my-10">LOG IN</div>
                 <div className="form-control flex flex-row w-full">
                     <UserIcon className='w-6 h-6 my-3 mr-5' />
                     <input type="text" placeholder="info@site.com" className="input input-bordered bg-white w-full" />
@@ -23,8 +24,8 @@ const Signin = () => {
             <div className="justify-self-center place-self-end pb-10">
                 <div className="btn bg-red-300 text-black w-full">Login</div>
                 <div className="text-center py-10">
-                    Forgot password? <br />
-                    Don't have an account? Sign up
+                    <Link href='/forget_password'><p>Forgot password?</p></Link> <br />
+                    Don't have an account? <Link href='/signup'><p>Sign up</p></Link>
                 </div>
             </div>
         </div>

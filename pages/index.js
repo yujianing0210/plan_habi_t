@@ -5,7 +5,9 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
       <div>
-        <p className='text-3xl font-bold'>Welcome to PLAN_habi_T</p>
+        <div className="justify-self-center place-self-end">
+                <Image src={progress bar} width={500} height={200} />
+            </div>
       </div>
   )
 }
